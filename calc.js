@@ -1,16 +1,15 @@
+//We are accesing every event from screen input tag
 var screen = document.querySelector("#screen");
+
+//we are accesing every event from screen btn tag
 var btn = document.querySelectorAll(".btn");
+
+//Attaching event listener to the buttons
 for (item of btn) {
   item.addEventListener("click", (e) => {
     btntext = e.target.innerText;
-    if (btntext == "x") {
-      btntext = "*";
-    }
-    if (btntext == "/") {
-      btntext = "/";
-    }
     screen.value = screen.value + btntext;
-    // console.log(screen.value, btntext);
+    console.log(screen.value, btntext);
   });
 }
 function sin() {
@@ -90,9 +89,9 @@ function ln() {
   screen.value = Math.log(screen.value);
 }
 
-// function mod() {
-//   screen.value = screen.value + "%";
-// }
+function absolute() {
+  screen.value = Math.abs(screen.value);
+}
 function plusMinus() {
   if (screen.value.charAt(0) === "-") {
     screen.value = screen.value.slice(1);
@@ -105,11 +104,6 @@ function power() {
   screen.value = Math.pow(10, screen.value);
 }
 
-function xPowY() {
-  // screen.value = Math.pow(screen.value, screen.value);
-  screen.value = screen.value + "^";
-}
-
-function exp() {
-  screen.value = Math.exp(screen.value);
+function random() {
+  screen.value = Math.random(screen.value);
 }
