@@ -19,10 +19,12 @@ cd Calculator-Practical
 Open the file
 
 ```bash
-index.html
+calc.html
 ```
 ## Hosting Demo of Home-Page
 ```bash
+https://utsavgohel-simform.github.io/Calculator-Practical/calc.html
+
 
 ```
 
